@@ -5,18 +5,94 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Fav icon -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/labios.png" type="image/x-icon">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap ícones -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <title>Art</title>
+  <title>Galeria de Maquiagem</title>
 </head>
 <body>
 
-  <!-- 1ª Digitação (Aqui) -->
+  <!-- HEADER -->
+  <div class="container-fluid">
+    <header id="header" class="row">
+      <div id="logo-container">
+        <img id="logo" src="img/labios.png" alt="Ícone de maquiagem, lábios">
+        <h1>Le Glamour</h1>
+      </div>
+      <p>Transforme seu visual com maquiagem</p>
+    </header>
 
+    <!-- NAVBAR -->
+    <nav id="navbar" class="container">
+      <div class="row justify-content-center">
+        <a href="#Home" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Produtos</a>
+        <a href="#" class="nav-link">Dicas</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </div>
+      <button id="toggle-mode" class="btn btn-dark">Modo Escuro</button>
+    </nav>
+  </div>
+
+  <!-- MAIN IMAGE -->
+  <div class="container" id="main-image-container">
+    <div class="main-image center-image">
+      <div class="main-image-info">
+        <h2>Transforme seu visual com maquiagem</h2>
+        <p class="secondary-color">Maquiagem para todos os estilos</p>
+        <a class="btn" href="#">Ver Produtos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="container" id="Home">
+    <div class="col-12">
+      <h1>Galeria de Maquiagens</h1>
+    </div>
+    <div class="row gx-md-5">
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-1" role="img" aria-label="Maquiagem Natural"></div>
+        <h3>Maquiagem Natural</h3>
+        <p class="secondary-color">Simples e elegante</p>
+        <a class="btn" href="#">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-2" role="img" aria-label="Maquiagem Colorida"></div>
+        <h3>Maquiagem Colorida</h3>
+        <p class="secondary-color">Criativa e vibrante</p>
+        <a class="btn" href="#">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-3" role="img" aria-label="Maquiagem Glamour"></div>
+        <h3>Maquiagem Glamour</h3>
+        <p class="secondary-color">Para ocasiões especiais</p>
+        <a class="btn" href="#">Detalhes</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container" id="contato">
+    <p class="secondary-color">Nos encontre nas redes sociais:</p>
+    <div class="row justify-content-center" id="social-icons-container">
+      <div class="col-1">
+        <a href="#"><i class="bi bi-facebook secondary-color" aria-label="Facebook"></i></a>
+      </div>
+      <div class="col-1">
+        <a href="#"><i class="bi bi-instagram secondary-color" aria-label="Instagram"></i></a>
+      </div>
+      <div class="col-1">
+        <a href="#"><i class="bi bi-twitter secondary-color" aria-label="Twitter"></i></a>
+      </div>
+    </div>
+    <p class="secondary-color">Maquiagem &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
